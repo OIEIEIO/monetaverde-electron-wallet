@@ -12,15 +12,15 @@ This is the new electron GUI for MonetaVerde. It is open source and completely f
 Please submit any changes as pull requests to the development branch, all changes are assessed in the development branch before being merged to master, release tags are considered stable builds for the GUI.
 
 #### Pre-requisites
-- Download latest [MonetaVerde](https://github.com/OIEIEIO/monetaverde
+- Download latest [MonetaVerde](https://github.com/OIEIEIO/monetaverde)
 #### Commands
 ```
 nvm use 11.9.0
 npm install -g quasar-cli
-git clone https://github.com/arqma/arqma-electron-wallet
-cd arqma-electron-gui-wallet
-cp path_to_arqma_binaries/arqmad bin/
-cp path_to_arqma_binaries/arqma-wallet-rpc bin/
+git clone https://github.com/OIEIEIO/monetaverde-electron-wallet
+cd monetaverde-electron-gui-wallet
+cp path_to_monetaverde_binaries/monetaverdedd bin/
+cp path_to_monetaverde_binaries/monetaverde-wallet-rpc bin/
 npm install
 ```
 
