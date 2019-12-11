@@ -18,7 +18,7 @@ Please submit any changes as pull requests to the development branch, all change
 nvm use 11.9.0
 npm install -g quasar-cli
 git clone https://github.com/OIEIEIO/monetaverde-electron-wallet
-cd monetaverde-electron-gui-wallet
+cd monetaverde-electron-wallet
 cp path_to_monetaverde_binaries/monetaverded bin/
 cp path_to_monetaverde_binaries/monetaverde-wallet-rpc bin/
 npm install
