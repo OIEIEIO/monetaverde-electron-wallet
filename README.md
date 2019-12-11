@@ -1,19 +1,18 @@
-# Arqma Electron GUI Wallet
+# MonetaVerde Electron GUI Wallet
 
 ### Introduction
-Arqma is a private cryptocurrency based on Monero.
-More information on the project can be found on the [website](https://arqma.com) and in the [whitepaper](https://arqma.github.io). Arqma is an open source project, and we encourage contributions from anyone with something to offer.
+MonetaVerde is a private cryptocurrency based on Monero.
+More information on the project can be found on the [website](https://mcn.green) 
 
 
 ### About this project
 
-This is the new electron GUI for Arqma. It is open source and completely free to use without restrictions, anyone may create an alternative implementation of the Arqma Electron GUI that uses the protocol and network in a compatible manner.
+This is the new electron GUI for MonetaVerde. It is open source and completely free to use without restrictions, anyone may create an alternative implementation of the Arqma Electron GUI that uses the protocol and network in a compatible manner.
 
 Please submit any changes as pull requests to the development branch, all changes are assessed in the development branch before being merged to master, release tags are considered stable builds for the GUI.
 
 #### Pre-requisites
-- Download latest [Arqmad](https://github.com/arqma/arqma/releases/latest)
-
+- Download latest [MonetaVerde](https://github.com/OIEIEIO/monetaverde
 #### Commands
 ```
 nvm use 11.9.0
