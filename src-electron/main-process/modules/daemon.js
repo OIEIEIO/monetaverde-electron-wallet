@@ -22,26 +22,26 @@ export class Daemon {
         // These are initial values used to calculate the height
         this.PIVOT_BLOCK_HEIGHT = 150000
         this.PIVOT_BLOCK_TIMESTAMP = 1554667008
-        this.PIVOT_BLOCK_TIME = 120
+        this.PIVOT_BLOCK_TIME = 60
     }
 
     checkVersion () {
         return new Promise((resolve, reject) => {
             if (process.platform === "win32") {
                 // eslint-disable-next-line no-undef
-                let arqmad_path = path.join(__arqma_bin, "arqmad.exe")
-                let arqmad_version_cmd = `"${arqmad_path}" --version`
-                if (!fs.existsSync(arqmad_path)) { resolve(false) }
-                child_process.exec(arqmad_version_cmd, (error, stdout, stderr) => {
+                let monetaverded_path = path.join(__monetaverde_bin, "monetaverded.exe")
+                let monetaverded_version_cmd = `"${monetaverded_path}" --version`
+                if (!fs.existsSync(monetaverded_path)) { resolve(false) }
+                child_process.exec(monetaverded_version_cmd, (error, stdout, stderr) => {
                     if (error) { resolve(false) }
                     resolve(stdout)
                 })
             } else {
                 // eslint-disable-next-line no-undef
-                let arqmad_path = path.join(__arqma_bin, "arqmad")
-                let arqmad_version_cmd = `"${arqmad_path}" --version`
-                if (!fs.existsSync(arqmad_path)) { resolve(false) }
-                child_process.exec(arqmad_version_cmd, { detached: true }, (error, stdout, stderr) => {
+                let monetaverded_path = path.join(__monetaverde_bin, "monetaverded")
+                let monetaverded_version_cmd = `"${monetaverded_path}" --version`
+                if (!fs.existsSync(monetaverded_path)) { resolve(false) }
+                child_process.exec(monetaverded_version_cmd, { detached: true }, (error, stdout, stderr) => {
                     if (error) { resolve(false) }
                     resolve(stdout)
                 })
@@ -121,7 +121,7 @@ export class Daemon {
                 args.push("--stagenet")
             }
 
-            args.push("--log-file", path.join(dirs[net_type], "logs", "arqmad.log"))
+            args.push("--log-file", path.join(dirs[net_type], "logs", "monetaverded.log"))
 
             if (daemon.rpc_bind_ip !== "127.0.0.1") { args.push("--confirm-external-bind") }
 
@@ -142,10 +142,10 @@ export class Daemon {
                 if (status === "closed") {
                     if (process.platform === "win32") {
                         // eslint-disable-next-line no-undef
-                        this.daemonProcess = child_process.spawn(path.join(__arqma_bin, "arqmad.exe"), args)
+                        this.daemonProcess = child_process.spawn(path.join(__monetaverde_bin, "monetaverded.exe"), args)
                     } else {
                         // eslint-disable-next-line no-undef
-                        this.daemonProcess = child_process.spawn(path.join(__arqma_bin, "arqmad"), args, {
+                        this.daemonProcess = child_process.spawn(path.join(__monetaverde_bin, "monetaverded"), args, {
                             detached: true
                         })
                     }
