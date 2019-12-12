@@ -95,7 +95,7 @@ export default {
             is_ready: false,
             outgoing_connections_count: 0,
             status: "OK",
-            target: 120,
+            target: 60,
             target_height: 0,
             testnet: false,
             top_block_hash: null,
@@ -118,7 +118,7 @@ export default {
             hostname: "api.coingecko.com",
             port: 443,
             coin: "arqma",
-            endpoint: "/api/v3/coins/arqma/tickers"
+            endpoint: "/api/v3/coins/moneta-verde/tickers"
         }
     }
 }
