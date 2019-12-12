@@ -178,7 +178,7 @@ module.exports = function (ctx) {
                 // https://www.electron.build/configuration/configuration
 
                 appId: "com.arqma.electron-wallet",
-                productName: "Arqma Electron Wallet",
+                productName: "MonetaVerde Electron Wallet",
                 copyright: "Copyright © 2018-2019 Arqma Project, 2018 Ryo/Loki Currency Project",
                 afterSign: "build/notarize.js",
 
