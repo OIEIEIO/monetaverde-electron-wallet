@@ -117,7 +117,7 @@ export default {
             protocol: "https://",
             hostname: "api.coingecko.com",
             port: 443,
-            coin: "arqma",
+            coin: "monetaverde",
             endpoint: "/api/v3/coins/moneta-verde/tickers"
         }
     }
