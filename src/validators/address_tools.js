@@ -1945,12 +1945,12 @@ return{_strlen:lb,_ge_mul8:Va,_keccak:db,_ge_scalarmult:Ta,_ge_fromfe_frombytes_
 
 
 
-var arqmaConfig = {
+var monetaverdeConfig = {
     coinUnitPlaces: 12,
-    coinSymbol: 'ARQ',
-    coinName: 'Arqma',
-    coinUriPrefix: 'arqma:',
-    addressPrefix: 0x2cca
+    coinSymbol: 'MCN',
+    coinName: 'MonetaVerde',
+    coinUriPrefix: 'monetaverde:',
+    addressPrefix: 0xeab
 };
 
 var cnUtilGen = function(initConfig) {
@@ -2389,7 +2389,7 @@ var cnUtilGen = function(initConfig) {
 
     return this;
 };
-var cnUtil = cnUtilGen(arqmaConfig);
+var cnUtil = cnUtilGen(monetaverdeConfig);
 /*
  mnemonic.js : Converts between 4-byte aligned strings and a human-readable
  sequence of words. Uses 1626 common words taken from wikipedia article:
@@ -2522,7 +2522,7 @@ function mn_random(bits) {
     'use strict';
     if (bits % 32 !== 0) throw "Something weird went wrong: Invalid number of bits - " + bits;
     var array = new Uint32Array(bits / 32);
-    if (!window.crypto) throw "Unfortunately MyMonero only runs on browsers that support the JavaScript Crypto API";
+    if (!window.crypto) throw "Unfortunately MonetaVerde only runs on browsers that support the JavaScript Crypto API";
     var i = 0;
 
     function arr_is_zero() {
