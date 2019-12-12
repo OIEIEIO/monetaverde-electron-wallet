@@ -27,11 +27,11 @@ export class Backend {
 
     init (config) {
         if (os.platform() === "win32") {
-            this.config_dir = "C:\\ProgramData\\arqma"
+            this.config_dir = "C:\\ProgramData\\monetaverde"
             this.wallet_dir = `${os.homedir()}\\Documents\\Arqma`
         } else {
-            this.config_dir = path.join(os.homedir(), ".arqma")
-            this.wallet_dir = path.join(os.homedir(), "Arqma")
+            this.config_dir = path.join(os.homedir(), ".monetaverde")
+            this.wallet_dir = path.join(os.homedir(), "MonetaVerde")
         }
 
         if (!fs.existsSync(this.config_dir)) {
@@ -47,11 +47,11 @@ export class Backend {
         const daemon = {
             type: "remote",
             p2p_bind_ip: "0.0.0.0",
-            p2p_bind_port: 19993,
+            p2p_bind_port: 36080,
             rpc_bind_ip: "127.0.0.1",
-            rpc_bind_port: 19994,
+            rpc_bind_port: 36081,
             zmq_rpc_bind_ip: "127.0.0.1",
-            zmq_rpc_bind_port: 19995,
+            zmq_rpc_bind_port: 36082,
             out_peers: -1,
             in_peers: -1,
             limit_rate_up: -1,
@@ -62,22 +62,22 @@ export class Backend {
         const daemons = {
             mainnet: {
                 ...daemon,
-                remote_host: "node.supportarqma.com",
-                remote_port: 19994
+                remote_host: "207.180.231.122",
+                remote_port: 36081
             },
             stagenet: {
                 ...daemon,
                 type: "local",
-                p2p_bind_port: 39993,
-                rpc_bind_port: 39994,
-                zmq_rpc_bind_port: 39995
+                p2p_bind_port: 56080,
+                rpc_bind_port: 56081,
+                zmq_rpc_bind_port: 56082
             },
             testnet: {
                 ...daemon,
                 type: "local",
-                p2p_bind_port: 29993,
-                rpc_bind_port: 29994,
-                zmq_rpc_bind_port: 29995
+                p2p_bind_port: 46080,
+                rpc_bind_port: 46081,
+                zmq_rpc_bind_port: 46082
             }
         }
 
@@ -87,11 +87,11 @@ export class Backend {
             app: {
                 data_dir: this.config_dir,
                 wallet_data_dir: this.wallet_dir,
-                ws_bind_port: 19994,
+                ws_bind_port: 36080,
                 net_type: "mainnet"
             },
             wallet: {
-                rpc_bind_port: 19999,
+                rpc_bind_port: 19996,
                 log_level: 0
             },
             market: {
@@ -103,8 +103,8 @@ export class Backend {
                     protocol: "https://",
                     hostname: "api.coingecko.com",
                     port: 443,
-                    coin: "arqma",
-                    endpoint: "/api/v3/coins/arqma/tickers"
+                    coin: "monetaverde",
+                    endpoint: "/api/v3/coins/moneta-verde/tickers"
                 }
             }
         }
@@ -119,8 +119,8 @@ export class Backend {
 
         this.remotes = [
             {
-                host: "node.supportarqma.com",
-                port: "19994"
+                host: "207.180.231.122",
+                port: "36081"
             }
         ]
 
@@ -254,7 +254,7 @@ export class Backend {
             }
 
             if (path) {
-                const baseUrl = net_type === "testnet" ? "https://stageblocks.arqma.com/" : "https://explorer.arqma.com/"
+                const baseUrl = net_type === "testnet" ? "http://164.68.97.206:8081/" : "https://http://164.68.97.206:8081/"
                 const url = `${baseUrl}/${path}/`
                 require("electron").shell.openExternal(url + params.id)
             }
