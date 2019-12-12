@@ -58,6 +58,7 @@ Adding a new language is fairly simple.
 
 
 ### Credits
+ArqTras https://github.com/arqma/arqma-electron-wallet
 
 mosu-forge https://github.com/ryo-currency/ryo-wallet
 
