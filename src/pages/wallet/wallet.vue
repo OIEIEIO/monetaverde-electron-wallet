@@ -8,8 +8,8 @@
         <div class="infoBoxBalance">
             <div class="infoBox">
                 <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("strings.arqmaBalance") }}</q-item-tile>
-                    <div class="value"><span><FormatArqma :amount="info.balance" /></span></div>
+                    <q-item-tile label>{{ $t("strings.monetaverdeBalance") }}</q-item-tile>
+                    <div class="value"><span><FormatMonetaVerde :amount="info.balance" /></span></div>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
         <div class="infoBoxBalance">
             <div class="infoBox">
                 <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("strings.arqmaExchangeBalance") }}</q-item-tile>
+                    <q-item-tile label>{{ $t("strings.monetaverdeExchangeBalance") }}</q-item-tile>
                     <div class="value"><span><FormatBitcoin/></span></div>
                 </div>
             </div>
@@ -28,8 +28,8 @@
         <div>
             <div class="infoBox">
                 <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("strings.arqmaUnlockedBalance") }}</q-item-tile>
-                    <div class="value"><span><FormatArqma :amount="info.unlocked_balance" /></span></div>
+                    <q-item-tile label>{{ $t("strings.monetaverdeUnlockedBalance") }}</q-item-tile>
+                    <div class="value"><span><FormatMonetaVerde :amount="info.unlocked_balance" /></span></div>
                 </div>
             </div>
         </div>
@@ -140,7 +140,77 @@
                     <div class="col-auto">
                         <q-btn
                             color="primary" style="width:25px;"
-                            size="sm" icon="file_copy"
+                            size="sm" icon="file_copy"3042
+
+            "cuchara", "cuello", "cuento", "cuerda", "cuesta", "cueva", "cuidar", "culebra",
+
+3043
+
+            "culpa", "culto", "cumbre", "cumplir", "cuna", "cuneta", "cuota", "cupón",
+
+3044
+
+            "cúpula", "curar", "curioso", "curso", "curva", "cutis", "dama", "danza",
+
+3045
+
+            "dar", "dardo", "dátil", "deber", "débil", "década", "decir", "dedo",
+
+3046
+
+            "defensa", "definir", "dejar", "delfín", "delgado", "delito", "demora", "denso",
+
+3047
+
+            "dental", "deporte", "derecho", "derrota", "desayuno", "deseo", "desfile", "desnudo",
+
+3048
+
+            "destino", "desvío", "detalle", "detener", "deuda", "día", "diablo", "diadema",
+
+3049
+
+            "diamante", "diana", "diario", "dibujo", "dictar", "diente", "dieta", "diez",
+
+3050
+
+            "difícil", "digno", "dilema", "diluir", "dinero", "directo", "dirigir", "disco",
+
+3051
+
+            "diseño", "disfraz", "diva", "divino", "doble", "doce", "dolor", "domingo",
+
+3052
+
+            "don", "donar", "dorado", "dormir", "dorso", "dos", "dosis", "dragón",
+
+3053
+
+            "droga", "ducha", "duda", "duelo", "dueño", "dulce", "dúo", "duque",
+
+3054
+
+            "durar", "dureza", "duro", "ébano", "ebrio", "echar", "eco", "ecuador",
+
+3055
+
+            "edad", "edición", "edificio", "editor", "educar", "efecto", "eficaz", "eje",
+
+3056
+
+            "ejemplo", "elefante", "elegir", "elemento", "elevar", "elipse", "élite", "elixir",
+
+3057
+
+            "elogio", "eludir", "embudo", "emitir", "emoción", "empate", "empeño", "empleo",
+
+3058
+
+            "empresa", "enano", "encargo", "enchufe", "encía", "enemigo", "enero", "enfado",
+
+3059
+
+            "enfermo", "engaño", "enigma", "enlace", "enorme", "enredo", "ensayo", "enseñar",
                             @click="copyPrivateKey('spend_key', $event)">
                             <q-tooltip anchor="center left" self="center right" :offset="[5, 10]">
                                 {{ $t("menuItems.copySpendKey") }}
@@ -209,7 +279,77 @@
                         </div>
                         <div class="col-3">
                             <q-btn class="float-right" v-on:click="selectKeyImageExportPath">{{ $t("buttons.browse") }}</q-btn>
-                        </div>
+                        </div>3042
+
+            "cuchara", "cuello", "cuento", "cuerda", "cuesta", "cueva", "cuidar", "culebra",
+
+3043
+
+            "culpa", "culto", "cumbre", "cumplir", "cuna", "cuneta", "cuota", "cupón",
+
+3044
+
+            "cúpula", "curar", "curioso", "curso", "curva", "cutis", "dama", "danza",
+
+3045
+
+            "dar", "dardo", "dátil", "deber", "débil", "década", "decir", "dedo",
+
+3046
+
+            "defensa", "definir", "dejar", "delfín", "delgado", "delito", "demora", "denso",
+
+3047
+
+            "dental", "deporte", "derecho", "derrota", "desayuno", "deseo", "desfile", "desnudo",
+
+3048
+
+            "destino", "desvío", "detalle", "detener", "deuda", "día", "diablo", "diadema",
+
+3049
+
+            "diamante", "diana", "diario", "dibujo", "dictar", "diente", "dieta", "diez",
+
+3050
+
+            "difícil", "digno", "dilema", "diluir", "dinero", "directo", "dirigir", "disco",
+
+3051
+
+            "diseño", "disfraz", "diva", "divino", "doble", "doce", "dolor", "domingo",
+
+3052
+
+            "don", "donar", "dorado", "dormir", "dorso", "dos", "dosis", "dragón",
+
+3053
+
+            "droga", "ducha", "duda", "duelo", "dueño", "dulce", "dúo", "duque",
+
+3054
+
+            "durar", "dureza", "duro", "ébano", "ebrio", "echar", "eco", "ecuador",
+
+3055
+
+            "edad", "edición", "edificio", "editor", "educar", "efecto", "eficaz", "eje",
+
+3056
+
+            "ejemplo", "elefante", "elegir", "elemento", "elevar", "elipse", "élite", "elixir",
+
+3057
+
+            "elogio", "eludir", "embudo", "emitir", "emoción", "empate", "empeño", "empleo",
+
+3058
+
+            "empresa", "enano", "encargo", "enchufe", "encía", "enemigo", "enero", "enfado",
+
+3059
+
+            "enfermo", "engaño", "enigma", "enlace", "enorme", "enredo", "ensayo", "enseñar",
                     </div>
                 </q-field>
             </template>
@@ -336,7 +476,7 @@
 const { clipboard } = require("electron")
 import { mapState } from "vuex"
 import AddressHeader from "components/address_header"
-import FormatArqma from "components/format_arqma"
+import FormatMonetaVerde from "components/format_monetaverde"
 import FormatBitcoin from "components/format_bitcoin"
 import TxList from "components/tx_list"
 export default {
@@ -641,7 +781,7 @@ export default {
         }
     },
     components: {
-        FormatArqma,
+        FormatMonetaVerde,
         FormatBitcoin,
         AddressHeader,
         TxList
