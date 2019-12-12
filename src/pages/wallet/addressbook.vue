@@ -6,7 +6,7 @@
     </div>
 
     <template v-if="address_book_combined.length">
-        <q-list link no-border :dark="theme=='dark'" class="arqma-list">
+        <q-list link no-border :dark="theme=='dark'" class="monetaverde-list">
             <q-item class="arqma-list-item" v-for="(entry, index) in address_book_combined" @click.native="details(entry)" :key="`${entry.address}-${entry.name}`">
                 <q-item-main>
                     <q-item-tile class="ellipsis" label>{{ entry.address }}</q-item-tile>
@@ -153,7 +153,7 @@ export default {
         font-weight: 500
     }
 
-    .arqma-list-item {
+    .monetaverde-list-item {
         cursor: pointer;
         padding-top: 12px;
         padding-bottom: 12px;
