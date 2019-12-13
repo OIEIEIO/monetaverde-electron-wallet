@@ -1,12 +1,12 @@
 <template>
 <span>
-    {{ value }} ARQ
+    {{ value }} MCN
 </span>
 </template>
 
 <script>
 export default {
-    name: "FormatArqma",
+    name: "FormatMonetaVerde",
     props: {
         amount: {
             required: true
