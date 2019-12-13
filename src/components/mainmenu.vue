@@ -31,23 +31,24 @@
     <q-modal minimized ref="aboutModal">
         <div class="about-modal">
 
-            <img class="q-mb-md" src="statics/arqma.svg" height="42" />
+            <img class="q-mb-md" src="statics/monetaverde.svg" height="42" />
 
             <p class="q-my-sm">Wallet Version: v{{version}}</p>
             <p class="q-my-sm">Daemon Version: v{{daemonVersion}}</p>
+            <p class="q-my-sm">Copyright (c) 2019-2020, MonetaVerde Project</p>
             <p class="q-my-sm">Copyright (c) 2018-2019, ArQmA Project</p>
             <p class="q-my-sm">Copyright (c) 2018, Ryo Currency Project</p>
             <p class="q-my-sm">All rights reserved.</p>
 
             <div class="q-mt-md q-mb-lg external-links">
                 <p>
-                    <a @click="openExternal('https://arqma.com/')" href="#">https://arqma.com/</a>
+                    <a @click="openExternal('https://mcn.green/')" href="#">https://mcn.green/</a>
                 </p>
                 <p>
-                    <a @click="openExternal('https://telegram.arqma.com')" href="#">Telegram</a> -
-                    <a @click="openExternal('https://chat.arqma.com')" href="#">Discord</a> -
-                    <a @click="openExternal('https://www.reddit.com/r/arqma/')" href="#">Reddit</a> -
-                    <a @click="openExternal('https://github.com/arqma/arqma-electron-wallet')" href="#">Github</a>
+                    <a @click="openExternal('https://telegram.monetaverde.com')" href="#">Telegram</a> -
+                    <a @click="openExternal('https://chat.monetaverde.com')" href="#">Discord</a> -
+                    <a @click="openExternal('https://www.reddit.com/r/monetaverde/')" href="#">Reddit</a> -
+                    <a @click="openExternal('https://github.com/OIEIEIO/monetaverde-electron-wallet')" href="#">Github</a>
                 </p>
             </div>
 
