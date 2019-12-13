@@ -16,7 +16,7 @@
 
         </q-toolbar>
         <div class="address-book-modal q-mx-md">
-            <ArqmaField :label="$t('fieldLabels.address')" :error="$v.newEntry.address.$error">
+            <MonetaVerdeField :label="$t('fieldLabels.address')" :error="$v.newEntry.address.$error">
                 <q-input
                     v-model="newEntry.address"
                     :placeholder="address_placeholder"
@@ -231,7 +231,7 @@ export default {
         AddressHeader,
         Identicon,
         TxList,
-        ArqmaField
+        MonetaVerdeField
     }
 }
 </script>
@@ -240,7 +240,7 @@ export default {
 .address-book-details {
 
     .address-book-modal {
-        > .arqma-field {
+        > .monetaverde-field {
             margin-top: 16px;
         }
 
