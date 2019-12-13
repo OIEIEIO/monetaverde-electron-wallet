@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: "ArqmaField",
+    name: "MonetaVerdeField",
     props: {
         label: {
             type: String,
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss">
-.arqma-field {
+.monetaverde-field {
     .label {
         margin: 6px 0;
         font-weight: bold;
