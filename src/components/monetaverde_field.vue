@@ -1,5 +1,5 @@
 <template>
-<div class="arqma-field" :class="{disable, 'disable-hover': disableHover}">
+<div class="monetaverde-field" :class="{disable, 'disable-hover': disableHover}">
     <div class="label row items-center" v-if="label" :disabled="disable">
         {{ label }}
         <span v-if="optional" class="optional">({{ $t("fieldLabels.optional") }})</span>
