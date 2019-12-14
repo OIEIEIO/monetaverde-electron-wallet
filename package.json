@@ -8,10 +8,10 @@
     "type": "git",
     "url": "https://github.com/OIEIEIO/monetaverde-electron-wallet.git"
   },
-  "cordovaId": "com.arqma.wallet",
+  "cordovaId": "green.monetaverde.wallet",
   "author": {
-    "name": "Arqma",
-    "email": "support@arqma.com"
+    "name": "MonetaVerde",
+    "email": "oieieio@protonmail.com"
   },
   "private": true,
   "scripts": {
