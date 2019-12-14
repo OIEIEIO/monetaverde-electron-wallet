@@ -28,10 +28,10 @@ export class Backend {
     init (config) {
         if (os.platform() === "win32") {
             this.config_dir = "C:\\ProgramData\\monetaverde"
-            this.wallet_dir = `${os.homedir()}\\Documents\\Arqma`
+            this.wallet_dir = `${os.homedir()}\\Documents\\MonetaVerde`
         } else {
             this.config_dir = path.join(os.homedir(), ".monetaverde")
-            this.wallet_dir = path.join(os.homedir(), "MonetaVerde")
+            this.wallet_dir = path.join(os.homedir(), "monetaverde")
         }
 
         if (!fs.existsSync(this.config_dir)) {
@@ -62,7 +62,7 @@ export class Backend {
         const daemons = {
             mainnet: {
                 ...daemon,
-                remote_host: "207.180.231.122",
+                remote_host: "164.68.97.206",
                 remote_port: 36081
             },
             stagenet: {
@@ -87,7 +87,7 @@ export class Backend {
             app: {
                 data_dir: this.config_dir,
                 wallet_data_dir: this.wallet_dir,
-                ws_bind_port: 36080,
+                ws_bind_port: 36081,
                 net_type: "mainnet"
             },
             wallet: {
