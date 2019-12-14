@@ -116,7 +116,7 @@ export class WalletRPC {
                     if (status === "closed") {
                         if (process.platform === "win32") {
                             // eslint-disable-next-line no-undef
-                            this.walletRPCProcess = child_process.spawn(path.join(__moentaverde_bin, "monetaverde-wallet-rpc.exe"), args)
+                            this.walletRPCProcess = child_process.spawn(path.join(__monetaverde_bin, "monetaverde-wallet-rpc.exe"), args)
                         } else {
                             // eslint-disable-next-line no-undef
                             this.walletRPCProcess = child_process.spawn(path.join(__monetaverde_bin, "monetaverde-wallet-rpc"), args, {
