@@ -28,7 +28,7 @@ export class Backend {
     init (config) {
         if (os.platform() === "win32") {
             this.config_dir = "C:\\ProgramData\\monetaverde"
-            this.wallet_dir = `${os.homedir()}\\Documents\\MonetaVerde`
+            this.wallet_dir = `${os.homedir()}\\Documents\\monetaverde`
         } else {
             this.config_dir = path.join(os.homedir(), ".monetaverde")
             this.wallet_dir = path.join(os.homedir(), "monetaverde")
@@ -119,7 +119,7 @@ export class Backend {
 
         this.remotes = [
             {
-                host: "207.180.231.122",
+                host: "164.68.97.206",
                 port: "36081"
             }
         ]
