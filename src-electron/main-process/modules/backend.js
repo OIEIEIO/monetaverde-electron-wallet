@@ -62,7 +62,7 @@ export class Backend {
         const daemons = {
             mainnet: {
                 ...daemon,
-                remote_host: "164.68.97.206",
+                remote_host: "144.91.106.214",
                 remote_port: 36081
             },
             stagenet: {
@@ -87,11 +87,11 @@ export class Backend {
             app: {
                 data_dir: this.config_dir,
                 wallet_data_dir: this.wallet_dir,
-                ws_bind_port: 36081,
+                ws_bind_port: 12313,
                 net_type: "mainnet"
             },
             wallet: {
-                rpc_bind_port: 19996,
+                rpc_bind_port: 18082,
                 log_level: 0
             },
             market: {
@@ -119,7 +119,7 @@ export class Backend {
 
         this.remotes = [
             {
-                host: "164.68.97.206",
+                host: "144.91.106.214",
                 port: "36081"
             }
         ]
