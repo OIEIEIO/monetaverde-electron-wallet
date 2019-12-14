@@ -1,7 +1,7 @@
 {
   "name": "monetaverde-electron-wallet",
-  "version": "2.0.6",
-  "daemonVersion": "6.0.0",
+  "version": "1.0.0",
+  "daemonVersion": "2.0.0",
   "description": "Modern GUI interface for MonetaVerde Currency",
   "productName": "MonetaVerde Electron Wallet",
   "repository": {
