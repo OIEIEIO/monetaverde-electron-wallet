@@ -254,7 +254,7 @@ export class Backend {
             }
 
             if (path) {
-                const baseUrl = net_type === "testnet" ? "http://164.68.97.206:8081/"
+                const baseUrl = net_type === "testnet" ? "http://164.68.97.206:8081"  : "https://164.68.97.206:8081"
                 const url = `${baseUrl}/${path}/`
                 require("electron").shell.openExternal(url + params.id)
             }
