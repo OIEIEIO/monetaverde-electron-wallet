@@ -24,10 +24,10 @@ export default {
     },
     computed: {
         value () {
-            let value = this.amount / 1e9
+            let value = this.amount / 1e12
             if(this.round)
                 value = value.toFixed(3)
-            return this.rawValue ? value : value.toLocaleString()
+            return value.toLocaleString()
         }
 
     }
