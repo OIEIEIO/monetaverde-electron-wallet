@@ -8,31 +8,27 @@
         <div class="infoBoxBalance">
             <div class="infoBox">
                 <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("strings.monetaverdeBalance") }}</q-item-tile>
+                    <q-item-tile label>{{ $t("Balance") }}</q-item-tile>
                     <div class="value"><span><FormatMonetaVerde :amount="info.balance" /></span></div>
                 </div>
             </div>
         </div>
-
-
-
-        <div class="infoBoxBalance">
-            <div class="infoBox">
+              <div class="infoBox">
                 <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("strings.monetaverdeExchangeBalance") }}</q-item-tile>
-                    <div class="value"><span><FormatBitcoin/></span></div>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="infoBox">
-                <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("strings.monetaverdeUnlockedBalance") }}</q-item-tile>
+                    <q-item-tile label>{{ $t("Unlocked Balance") }}</q-item-tile>
                     <div class="value"><span><FormatMonetaVerde :amount="info.unlocked_balance" /></span></div>
                 </div>
             </div>
         </div>
+              <div class="infoBoxBalance">
+                  <div class="infoBox">
+                     <div class="infoBoxContent">
+                    <q-item-tile label>{{ $t("Market Value BTC Balance") }}</q-item-tile>
+                    <div class="value"><span><FormatBitcoin/></span></div>
+                </div>
+            </div>
+        </div>
+       
         <div class="col text-right q-mr-sm">
             <div class="infoBox">
             <q-item-tile icon-right="more_vert" label>{{ $t("placeholders.operations") }}</q-item-tile>
