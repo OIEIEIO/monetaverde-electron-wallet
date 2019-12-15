@@ -41,7 +41,7 @@ export default {
     methods: {
         display (selected) {
             if (this.market.exchanges.length == 0) return `0.0`
-            let value = this.info.balance * (this.market.exchanges[selected].value / 1e9)
+            let value = this.info.balance * (this.market.exchanges[selected].value / 1e12)
             value = value.toFixed(8)
             return `${value} ${this.market.exchanges[selected].symbol}`
         },
