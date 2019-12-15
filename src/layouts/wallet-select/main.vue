@@ -13,7 +13,7 @@
 
         <q-toolbar-title v-if="page_title=='MonetaVerde'">
             <div style="margin-top:7px">
-                <img src="statics/monetaverde.svg" height="32">
+                <img src="statics/monetaverde.svg" height="100">
             </div>
         </q-toolbar-title>
         <q-toolbar-title v-else>
