@@ -177,7 +177,7 @@ module.exports = function (ctx) {
             builder: {
                 // https://www.electron.build/configuration/configuration
 
-                appId: "com.arqma.electron-wallet",
+                appId: "green.monetaverde.wallet",
                 productName: "MonetaVerde Electron Wallet",
                 copyright: "Copyright © 2019-2020 MonetaVerde Project, 2018-2019 Arqma Project, 2018 Ryo/Loki Currency Project",
                 afterSign: "build/notarize.js",
