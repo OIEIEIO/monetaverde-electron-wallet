@@ -179,7 +179,7 @@ module.exports = function (ctx) {
 
                 appId: "green.monetaverde.wallet",
                 productName: "MonetaVerde Electron Wallet",
-                copyright: "Copyright © 2019-2020 MonetaVerde Project, 2018-2019 Arqma Project, 2018 Ryo/Loki Currency Project",
+                copyright: "Copyright © 2019-2020 MonetaVerde Project",
                 afterSign: "build/notarize.js",
 
                 // directories: {
@@ -210,7 +210,7 @@ module.exports = function (ctx) {
                 },
 
 //                dmg: {
-//                    background: "src-electron/build/arqma-dmg.tiff",
+//                    background: "src-electron/build/monetaverde-dmg.tiff",
 //                    sign: false
 //                },
 
