@@ -244,7 +244,7 @@ export default {
         deleteWallet: "Usuń portfel",
         exportTransactions: "Export transakcji",
         exportWallet: "Eksport portfela",
-        exit: "Wyjdź Arqma GUI Wallet",
+        exit: "Wyjdź MonetaVerde GUI Wallet",
         importOldGUIWallet: "Importuj portfel z starego GUI",
         manageKeyImages: "Zarządzaj kluczami",
         openWallet: "Otwórz portfel",
@@ -329,7 +329,7 @@ export default {
         warnings: {
             noKeyImageExport: "Nie znależiono key images do exportu",
             usingLocalNode: "Nie można uzyskać dostępu do zdalnego węzła, przełączając się tylko na lokalny",
-            usingRemoteNode: "arqmad nie znaleziono, używam zdalnego węzła"
+            usingRemoteNode: "monetaverded nie znaleziono, używam zdalnego węzła"
         }
     },
     placeholders: {
@@ -405,10 +405,10 @@ export default {
         editAddressBookEntry: "Edytuj wpis książki adresowej",
         loading: "Ładowanie...",
         loadingSettings: "Ładowanie ustawień",
-        arqmaBalance: "Saldo",
-        arqmaExchangeBalance: "Saldo",
-        arqmaUnlockedBalance: "Odblokowane saldo",
-        arqmaUnlockedShort: "Odblokowane",
+        monetaverdeBalance: "Saldo",
+        monetaverdeExchangeBalance: "Saldo",
+        monetaverdeUnlockedBalance: "Odblokowane saldo",
+        monetaverdeUnlockedShort: "Odblokowane",
         noTransactionsFound: "Nie znaleziono transakcji",
         notes: "Uwagi",
         numberOfUnspentOutputs: "Liczba niewydanych wyników",
