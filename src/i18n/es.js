@@ -243,7 +243,7 @@ export default {
         deleteWallet: "Eliminar monedero",
         exportWallet: "Billetera de exportación",
         exportTransactions: "Transacciones de exportación",
-        exit: "Cerrar la interfaz del monedero Arqma",
+        exit: "Cerrar la interfaz del monedero MonetaVerde",
         importOldGUIWallet: "Importar monedero de una interfaz gráfica antigua",
         manageKeyImages: "Administrar Imágenes de Clave",
         openWallet: "Abrir monedero",
@@ -328,7 +328,7 @@ export default {
         warnings: {
             noKeyImageExport: "No se han encontrado claves para exportar",
             usingLocalNode: "No se ha podido acceder al nodo remoto, volviendo al modo local",
-            usingRemoteNode: "arqmad no encontrado, utilizando nodo remoto"
+            usingRemoteNode: "monetaverded no encontrado, utilizando nodo remoto"
         }
     },
     placeholders: {
@@ -404,10 +404,10 @@ export default {
         editAddressBookEntry: "Modificar un registro de la libreta de direcciones",
         loading: "Cargando...",
         loadingSettings: "Cargando configuración",
-        arqmaBalance: "Saldo",
-        arqmaExchangeBalance: "Saldo",
-        arqmaUnlockedBalance: "Saldo libre",
-        arqmaUnlockedShort: "Libre",
+        monetaverdeBalance: "Saldo",
+        monetaverdeExchangeBalance: "Saldo",
+        monetaverdeUnlockedBalance: "Saldo libre",
+        monetaverdeUnlockedShort: "Libre",
         noTransactionsFound: "No se han encontrado transacciones",
         notes: "Notas",
         numberOfUnspentOutputs: "Número de salidas no gastadas",
