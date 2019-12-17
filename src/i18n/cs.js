@@ -243,7 +243,7 @@ export default {
         deleteWallet: "Smazat Peněženku",
         exportWallet: "Exportovat peněženku",
         exportTransactions: "Exportní transakce",
-        exit: "Ukončit Arqma GUI Peněženku",
+        exit: "Ukončit MonetaVerde GUI Peněženku",
         importOldGUIWallet: "Import peněženky ze starého GUI",
         manageKeyImages: "Správa Key Images",
         openWallet: "Otevřít peněženku",
@@ -328,7 +328,7 @@ export default {
         warnings: {
             noKeyImageExport: "Nebyly nalezeny žádné key images pro export",
             usingLocalNode: "Nelze přistupovat ke vzdálenému node, přepnout pouze na lokální",
-            usingRemoteNode: "arqmad nenalezeno, použít vzdálený node"
+            usingRemoteNode: "monetaverded nenalezeno, použít vzdálený node"
         }
     },
     placeholders: {
@@ -401,10 +401,10 @@ export default {
         editAddressBookEntry: "Editovat položku adresáře",
         loading: "Načítání...",
         loadingSettings: "Načítání nastavení",
-        arqmaBalance: "Zůstatek",
-        arqmaUnlockedBalance: "Odemčený zůstatek",
-        arqmaUnlockedShort: "Odemčeno",
-        arqmaExchangeBalance: "Stavy na burzách",
+        monetaverdeBalance: "Zůstatek",
+        monetaverdeUnlockedBalance: "Odemčený zůstatek",
+        monetaverdeUnlockedShort: "Odemčeno",
+        monetaverdeExchangeBalance: "Stavy na burzách",
         noTransactionsFound: "Nebyly nalezeny žádné transakce",
         notes: "Poznámky",
         numberOfUnspentOutputs: "Dostupné prostředky",
