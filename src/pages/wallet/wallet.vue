@@ -8,14 +8,14 @@
         <div class="infoBoxBalance">
             <div class="infoBox">
                 <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("Balance") }}</q-item-tile>
+                    <q-item-tile label>{{ $t("strings.monetaverdeBalance") }}</q-item-tile>
                     <div class="value"><span><FormatMonetaVerde :amount="info.balance" /></span></div>
                 </div>
             </div>
         </div>
               <div class="infoBox">
                 <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("Unlocked Balance") }}</q-item-tile>
+                    <q-item-tile label>{{ $t("strings.monetaverdeUnlockedBalance") }}</q-item-tile>
                     <div class="value"><span><FormatMonetaVerde :amount="info.unlocked_balance" /></span></div>
                 </div>
             </div>
