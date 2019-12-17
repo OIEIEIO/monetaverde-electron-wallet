@@ -758,7 +758,7 @@ export class WalletRPC {
                 return
             }
 
-            amount = (parseFloat(amount) * 1e9).toFixed(0)
+            amount = (parseFloat(amount) * 1e12).toFixed(3)
 
             this.sendRPC("stake", {
                 amount,
@@ -939,7 +939,7 @@ export class WalletRPC {
                 return
             }
 
-            amount = (parseFloat(amount) * 1e9).toFixed(0)
+            amount = (parseFloat(amount) * 1e12).toFixed(3)
 
             let sweep_all = amount == this.wallet_state.unlocked_balance
 
@@ -1732,7 +1732,7 @@ export class WalletRPC {
                         if (params.header)
                             csv.write(params.headers)
                         for (const [key, transaction] of Object.entries(data.transactions.tx_list)) {
-                            csv.write(`${transaction.address},${transaction.amount / 1e9},${transaction.confirmations},${transaction.double_spend_seen},${transaction.fee / 1e9},${transaction.height},${transaction.note},${transaction.payment_id},${transaction.suggested_confirmations_threshold},${new Date(transaction.timestamp * 1000).toISOString()},${transaction.txid},${transaction.type},${transaction.unlock_time}\n`)
+                            csv.write(`${transaction.address},${transaction.amount / 1e12},${transaction.confirmations},${transaction.double_spend_seen},${transaction.fee / 1e12},${transaction.height},${transaction.note},${transaction.payment_id},${transaction.suggested_confirmations_threshold},${new Date(transaction.timestamp * 1000).toISOString()},${transaction.txid},${transaction.type},${transaction.unlock_time}\n`)
                         }
                         csv.end()
                         resolve()
