@@ -43,8 +43,8 @@
                     <a @click="openExternal('https://mcn.green/')" href="#">https://mcn.green/</a>
                 </p>
                 <p>
-                    <a @click="openExternal('https://telegram.monetaverde.com')" href="#">Telegram</a> -
-                    <a @click="openExternal('https://chat.monetaverde.com')" href="#">Discord</a> -
+                    <a @click="openExternal('https://t.me/joinchat/J345qUOVKPPtsJQgiLbwVQ')" href="#">Telegram</a> -
+                    <a @click="openExternal('https://discord.gg/ExaXHPt')" href="#">Discord</a> -
                     <a @click="openExternal('https://www.reddit.com/r/monetaverde/')" href="#">Reddit</a> -
                     <a @click="openExternal('https://github.com/OIEIEIO/monetaverde-electron-wallet')" href="#">Github</a>
                 </p>
