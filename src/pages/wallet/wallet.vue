@@ -23,7 +23,7 @@
               <div class="infoBoxBalance">
                   <div class="infoBox">
                      <div class="infoBoxContent">
-                    <q-item-tile label>{{ $t("Market Value in BTC") }}</q-item-tile>
+                    <q-item-tile label>{{ $t("strings.monetaverdeExchangeBalance") }}</q-item-tile>
                     <div class="value"><span><FormatBitcoin/></span></div>
                 </div>
             </div>
