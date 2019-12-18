@@ -87,11 +87,11 @@ export class Backend {
             app: {
                 data_dir: this.config_dir,
                 wallet_data_dir: this.wallet_dir,
-                ws_bind_port: 12313,
+                ws_bind_port: 36081,
                 net_type: "mainnet"
             },
             wallet: {
-                rpc_bind_port: 18082,
+                rpc_bind_port: 19996,
                 log_level: 0
             },
             market: {
@@ -254,7 +254,7 @@ export class Backend {
             }
 
             if (path) {
-                const baseUrl = net_type === "testnet" ? "http://164.68.97.206:8081"  : "https://164.68.97.206:8081"
+                const baseUrl = net_type === "testnet" ? "http://164.68.97.206:8081"  : "http://164.68.97.206:8081"
                 const url = `${baseUrl}/${path}/`
                 require("electron").shell.openExternal(url + params.id)
             }
